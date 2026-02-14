@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Rush 1000</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <h1 id="gameTitle">Rush 1000</h1>
+          <p id="gameSubtitle">1000 fases com dificuldade gradual</p>
+        </div>
+        <button id="languageToggle" class="ghost-btn" aria-label="Alternar idioma">PT / EN</button>
+      </header>
+
+      <section class="hud">
+        <div class="card">
+          <span id="levelLabel">Fase</span>
+          <strong id="levelValue">1</strong>
+        </div>
+        <div class="card">
+          <span id="goalLabel">Meta</span>
+          <strong id="goalValue">0</strong>
+        </div>
+        <div class="card">
+          <span id="progressLabel">Progresso</span>
+          <strong id="progressValue">0</strong>
+        </div>
+      </section>
+
+      <section class="arena-wrap">
+        <canvas id="gameCanvas" width="360" height="540" aria-label="Área do jogo"></canvas>
+        <div class="overlay" id="overlay">
+          <h2 id="statusTitle">Prepare-se!</h2>
+          <p id="statusText">Toque em Iniciar para jogar.</p>
+          <button id="startButton" class="primary-btn">Iniciar</button>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="leftBtn" class="control-btn" aria-label="Mover para esquerda">◀</button>
+        <button id="rightBtn" class="control-btn" aria-label="Mover para direita">▶</button>
+      </section>
+
+      <footer class="tips" id="tips">
+        Desvie dos blocos vermelhos. Complete a meta para avançar para a próxima fase.
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
