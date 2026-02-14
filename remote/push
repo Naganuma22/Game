@@ -1,0 +1,2 @@
+git remote add origin https://github.com/Naganuma22/Game.git
+git push -u origin main
